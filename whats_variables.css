@@ -1,0 +1,9 @@
+:root{
+    --blanco: white;
+    --negro: black;
+    --verde_oscuro: #075E54;
+    --blanco_transparente: rgba(255, 255, 255, 0.637);
+    --gris: gray;
+    --verde_claro: #25D366;
+    --verde_fondo: #128C7E;
+}
