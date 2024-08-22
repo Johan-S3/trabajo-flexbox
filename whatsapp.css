@@ -88,17 +88,17 @@ body{
     background-color: var(--blanco);
     border: 1px solid black;                /*Quitar al terminar*/
 }
-.interfaz, .apartado{
+.interfaz, .apartado, .seccion{
     padding-top: 10px;
     display: flex;
     width: 100%;
 }
-.imagen, .img{
+.imagen, .img, .image{
     height: 70px;
     display: flex;
     align-items: center;
 }
-.imagen__foto{
+.imagen__foto, .image__llamada{
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -118,7 +118,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.informacion__nombre, .info__miestado{
+.informacion__nombre, .info__miestado, .detalles__nombre{
     font-weight: bold;
     font-size: 18px;
 }
@@ -175,13 +175,13 @@ body{
     height: 65px;
     border-radius: 100%;
 }
-.espacio{
+.espacio, .parte{
     width: 100%;
     margin-left: 10px;
     display: flex;
     align-items: center;
 }
-.info{
+.info, .detalles{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -209,4 +209,38 @@ body{
 .img__estado--visto{
     padding: 2px;
     border: 2.5px solid var(--verde_claro);
+}
+
+.link{
+    height: 70px;
+    width: 85px;
+    background-color: var(--verde_oscuro);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.link__icon{
+    color: var(--blanco);
+}
+.hora{
+    color: var(--gris);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.hora__icon{
+    color: var(--verde_claro);
+    font-size: 22px;
+}
+.hora__icon--rojo{
+    color: var(--rojo);
+}
+.seccion__icon{
+    width: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    color: var(--verde_fondo);
 }
