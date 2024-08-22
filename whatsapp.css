@@ -18,7 +18,7 @@ body{
     margin: 40px auto;
     border: 3px solid var(--blanco);
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 30px;
 }
 .header{
@@ -71,20 +71,29 @@ body{
     color: var(--blanco);
 }
 
-.chat{
-    margin-left: 10px;
-    margin-right: 10px;
+
+.contenedor_interfaz{
+    width: 1332px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.chat, .estados, .llamadas{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 110px;
     overflow-y: scroll;
     height: 705px;
     scrollbar-width: none;
+    background-color: var(--blanco);
+    border: 1px solid black;                /*Quitar al terminar*/
 }
-.interfaz{
+.interfaz, .apartado{
     padding-top: 10px;
     display: flex;
     width: 100%;
 }
-.imagen{
+.imagen, .img{
     height: 70px;
     display: flex;
     align-items: center;
@@ -109,7 +118,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.informacion__nombre{
+.informacion__nombre, .info__miestado{
     font-weight: bold;
     font-size: 18px;
 }
@@ -157,4 +166,47 @@ body{
     top: 725px;
     left: 340px;
     font-size: 30px;
+}
+
+.img__estado{
+    padding: 2px;
+    border: 2.5px solid var(--gris);
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+.espacio{
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+}
+.apartado__icon{
+    width: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.info__hora{
+    color: var(--gris);
+    font-size: 16px;
+}
+.descripcion{
+    margin-top: 10px;
+}
+.descripcion__texto{
+    color: var(--gris);
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.img__estado--visto{
+    padding: 2px;
+    border: 2.5px solid var(--verde_claro);
 }
