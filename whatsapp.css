@@ -13,11 +13,13 @@ body{
 }
 .contenedor{
     max-width: 450px;
-    height: 90vh;
+    height: 810px;
     background-color: var(--blanco);
     margin: 40px auto;
     border: 3px solid var(--blanco);
     position: relative;
+    overflow: hidden;
+    border-radius: 30px;
 }
 .header{
     width: 100%;
@@ -72,8 +74,10 @@ body{
 .chat{
     margin-left: 10px;
     margin-right: 10px;
+    padding-bottom: 110px;
     overflow-y: scroll;
     height: 705px;
+    scrollbar-width: none;
 }
 .interfaz{
     padding-top: 10px;
@@ -150,7 +154,7 @@ body{
     border-radius: 100%;
     align-items: center;
     justify-content: center;
-    top: 78vh;
+    top: 725px;
     left: 340px;
     font-size: 30px;
 }
