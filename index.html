@@ -6,533 +6,611 @@
     <title>Whatsapp</title>
     <link rel="stylesheet" href="whatsapp.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
+
     <main>
+
         <div class="contenedor">
-            <div class="boton_contactos">
-                <i class='bx bxs-comment-detail'></i>
-            </div>
+
             <header class="header">
+
                 <div class="header__principal principal">
                     <Span class="principal__titulo">Whatsapp</Span>
                     <div class="principal__iconos">
+                        <i class='iconos__camara bx bxs-camera' ></i>
                         <i class='iconos__lupa bx bx-search'></i>
                         <i class='iconos__3puntos bx bx-dots-vertical-rounded'></i>
                     </div>
                 </div>
-                <nav class="header__navegacion navegacion">
-                        <a><i class='navegacion__item navegacion__item--camara bx bxs-camera' ></i></a>
-                        <a class="navegacion__item navegacion__item--borde_bajo">CHATS
-                            <div class="navegacion__circulo">8</div></a>
-                        <a class="navegacion__item">ESTADOS</a>
-                        <a class="navegacion__item">LLAMADAS</a>
-                    </ul>
-                </nav>
+
             </header>
-            <div class="contenedor_interfaz">
-                <div class="chat" id="CHATS">
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/foto1.png" alt="Foto hombre" class="imagen__foto">
+
+            <main class="contenido">
+                <input type="radio" id="chats" name="navegar" class="contenido__inputs" checked>
+                <input type="radio" id="estados" name="navegar" class="contenido__inputs">
+                <input type="radio" id="llamadas" name="navegar" class="contenido__inputs">
+
+                <nav class="contenido__navegacion navegacion">
+                    <label for="chats" class="navegacion__item">
+                        CHATS<div class="navegacion__circulo">8</div>
+                    </label>
+                    <label for="estados" class="navegacion__item">
+                        ESTADOS<div class="navegacion__circulo navegacion__circulo--sin_numero"></div>
+                    </label>
+                    <label for="llamadas" class="navegacion__item">
+                        LLAMADAS<div class="navegacion__circulo">5</div>
+                    </label>
+                </nav>
+                <!-- <div class="navegacion__barra">
+                    <div class="barra"></div>
+                </div> -->
+
+                <div class="contenido_interfaz">
+
+                    <div class="chat">
+
+                        <div class="boton_contactos">
+                            <i class='bx bxs-comment-detail'></i>
                         </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Fransisco Flores</span>
-                                <span class="informacion__hora">15:45</span>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/foto1.png" alt="Foto hombre" class="imagen__foto">
                             </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Hola</span>
-                                <span class="mensaje__numero">1</span>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Fransisco Flores</span>
+                                    <span class="informacion__hora">15:45</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Hola</span>
+                                    <span class="mensaje__numero">1</span>
+                                </div>
                             </div>
                         </div>
+        
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/sin foto.jpg" alt="Sin foto" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Kevin Paez</span>
+                                    <span class="informacion__hora">14:53</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Mañana le llevo el casco</span>
+                                    <span class="mensaje__numero">4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/mujer.jpg" alt="Foto mujer" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Luisa</span>
+                                    <span class="informacion__hora informacion__hora--negro">14:36</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Que te valla bien Bb</span>
+                                    <span class="mensaje__numero mensaje__numero--inactivo">1</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/familia.jpg" alt="Foto familia" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Familia</span>
+                                    <span class="informacion__hora">13:45</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Laura: Está bien Yo lo llevo</span>
+                                    <span class="mensaje__numero">9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/señor.jpg" alt="Foto señor" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Omar Perez</span>
+                                    <span class="informacion__hora">13:15</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Nos habamos mañana entonces</span>
+                                    <span class="mensaje__numero">3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/joven.jpg" alt="Foto joven" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Brayan Tec</span>
+                                    <span class="informacion__hora informacion__hora--negro">12:30</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto mensaje__texto--verde">escribiendo...</span>
+                                    <span class="mensaje__numero mensaje__numero--inactivo">1</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/joven2.webp" alt="Foto señor" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Americo</span>
+                                    <span class="informacion__hora informacion__hora--negro">9:45</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto"><i class='bx bxs-camera-movie' ></i> Esta lloviendo Fuerte</span>
+                                    <span class="mensaje__numero mensaje__numero--inactivo">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/perfil yari.png" alt="Foto gato" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Yari</span>
+                                    <span class="informacion__hora">9:15</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Tranqui Polo...</span>
+                                    <span class="mensaje__numero">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/mono.png" alt="Perfil yari" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Breyner</span>
+                                    <span class="informacion__hora">9:02</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Me acabo de levantar parce</span>
+                                    <span class="mensaje__numero">1</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/sin foto.jpg" alt="Foto hombre" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Alfredo</span>
+                                    <span class="informacion__hora">8:53</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Allá nos vemos</span>
+                                    <span class="mensaje__numero">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat__interfaz interfaz">
+                            <div class="interfaz__imagen imagen">
+                                <img src="fotos/sin foto.jpg" alt="Foto hombre" class="imagen__foto">
+                            </div>
+                            <div class="interfaz__cuerpo cuerpo">
+                                <div class="cuerpo__informacion informacion"> 
+                                    <span class="informacion__nombre">Torres</span>
+                                    <span class="informacion__hora">7:35</span>
+                                </div>
+                                <div class="cuerpo__mensaje mensaje">
+                                    <span class="mensaje__texto">Ya estás despierto???</span>
+                                    <span class="mensaje__numero">1</span>
+                                </div>
+                            </div>
+                        </div>
+                    
                     </div>
-    
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/sin foto.jpg" alt="Sin foto" class="imagen__foto">
+
+                    <div class="estados">
+
+                        <div class="boton_lapiz">
+                            <i class='bx bx-pencil' ></i>
                         </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Kevin Paez</span>
-                                <span class="informacion__hora">14:53</span>
+                        <div class="boton_camara">
+                            <i class='bx bxs-camera' ></i>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/paisaje-og.webp" alt="paisaje" class="img__estado">
                             </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Mañana le llevo el casco</span>
-                                <span class="mensaje__numero">4</span>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Mi estado</span>
+                                    <span class="info__hora">Hace 55 minutos, 17:42</span>
+                                </div>
+                            </div>
+                            <div class="apartado__icon">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
                             </div>
                         </div>
+
+                        <div class="estados__descripcion descripcion">
+                            <span class="descripcion__texto">Recientes</span>
+                        </div>
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est1.png" alt="matacho" class="img__estado img__estado--visto">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Breyner</span>
+                                    <span class="info__hora">Justo ahora</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est3.jpeg" alt="perro" class="img__estado img__estado--visto">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Yari</span>
+                                    <span class="info__hora">Hace 10 minutos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est5.webp" alt="paisaje" class="img__estado img__estado--visto">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Mommy</span>
+                                    <span class="info__hora">13:59</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est6.jpeg" alt="perrito" class="img__estado img__estado--visto">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Laura</span>
+                                    <span class="info__hora">13:33</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est4.jpeg" alt="foto" class="img__estado img__estado--visto">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Profe John</span>
+                                    <span class="info__hora">12:58</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est2.jpeg" alt="meme" class="img__estado img__estado--visto">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Papeleria Zafiro</span>
+                                    <span class="info__hora">12:43</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__descripcion descripcion">
+                            <span class="descripcion__texto">Vistos</span>
+                        </div>
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est7.jpeg" alt="meme" class="img__estado">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Brayan</span>
+                                    <span class="info__hora">11:53</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est8.jpg" alt="mujer" class="img__estado">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Luisa</span>
+                                    <span class="info__hora">10:03</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est9.jpg" alt="bebe" class="img__estado">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Maria Paula</span>
+                                    <span class="info__hora">9:47</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est10.jpg" alt="pero" class="img__estado">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Andres</span>
+                                    <span class="info__hora">9:15</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est11.webp" alt="moto" class="img__estado">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">David Guevara</span>
+                                    <span class="info__hora">8:32</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="estados__apartado apartado">
+                            <div class="apartado__img img">
+                                <img src="estados/est12.avif" alt="libro" class="img__estado">
+                            </div>
+                            <div class="apartado__espacio espacio">
+                                <div class="espacio__info info"> 
+                                    <span class="info__miestado">Lady</span>
+                                    <span class="info__hora">8:00</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/mujer.jpg" alt="Foto mujer" class="imagen__foto">
+
+                    <div class="llamadas">
+
+                        <div class="boton__llamada">
+                            <i class="material-symbols-outlined">add_call</i>
                         </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Luisa</span>
-                                <span class="informacion__hora informacion__hora--negro">14:36</span>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__link link">
+                                <i class='link__icon bx bx-link-alt bx-rotate-180' ></i>
                             </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Que te valla bien Bb</span>
-                                <span class="mensaje__numero mensaje__numero--blanco">1</span>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre">Crear enlace de llamada</span>
+                                    <span class="detalles__hora hora">
+                                        Comparte el enlace para tu llamada
+                                    </span>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="llamadas__descripcion descripcion">
+                            <span class="descripcion__texto">Recientes</span>
+                        </div>
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/mujer.jpg" alt="mujer" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre">Luisa</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>Hace 10 minutos
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/mujer.jpg" alt="mujer" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre detalles__nombre--rojo">Luisa</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>14:22
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+                        
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/mono.png" alt="mono" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre">Breyner</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>Ayer, 13:47
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/sin foto.jpg" alt="sin foto" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre detalles__nombre--rojo">Torres</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>Ayer, 10:15
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/joven.jpg" alt="Jover" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre">Brayan Tec</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>Ayer, 8:25
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/perfil yari.png" alt="gato" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre detalles__nombre--rojo">Yari</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>19/08/2024, 11:31
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/joven2.webp" alt="joven" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre">Americo</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>19/08/2024, 00:02
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/foto1.png" alt="joven" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre detalles__nombre--rojo">Fransisco Flores</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>18/08/2024, 09:34
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/sin foto.jpg" alt="sin foto" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre">Kevin Paez</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>11/08/2024, 12:02
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
+                        <div class="llamadas__seccion seccion">
+                            <div class="seccion__image image">
+                                <img src="fotos/sin foto.jpg" alt="sin foto" class="image__llamada">
+                            </div>
+                            <div class="seccion__parte parte">
+                                <div class="parte__detalles detalles"> 
+                                    <span class="detalles__nombre detalles__nombre--rojo">Manolo</span>
+                                    <span class="detalles__hora hora">
+                                        <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>10/08/2024, 14:56
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="seccion__icon">
+                                <i class='bx bxs-phone'></i>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/familia.jpg" alt="Foto familia" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Familia</span>
-                                <span class="informacion__hora">13:45</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Laura: Está bien Yo lo llevo</span>
-                                <span class="mensaje__numero">9</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/señor.jpg" alt="Foto señor" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Omar Perez</span>
-                                <span class="informacion__hora">13:15</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Nos habamos mañana entonces</span>
-                                <span class="mensaje__numero">3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/joven.jpg" alt="Foto joven" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Brayan Tec</span>
-                                <span class="informacion__hora informacion__hora--negro">12:30</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto mensaje__texto--verde">escribiendo...</span>
-                                <span class="mensaje__numero mensaje__numero--blanco">1</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/joven2.webp" alt="Foto señor" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Americo</span>
-                                <span class="informacion__hora informacion__hora--negro">9:45</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto"><i class='bx bxs-camera-movie' ></i> Esta lloviendo Fuerte</span>
-                                <span class="mensaje__numero mensaje__numero--blanco">0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/perfil yari.png" alt="Foto gato" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Yari</span>
-                                <span class="informacion__hora">9:15</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Tranqui Polo...</span>
-                                <span class="mensaje__numero">2</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/mono.png" alt="Perfil yari" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Breyner</span>
-                                <span class="informacion__hora">9:02</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Me acabo de levantar parce</span>
-                                <span class="mensaje__numero">1</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/sin foto.jpg" alt="Foto hombre" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Alfredo</span>
-                                <span class="informacion__hora">8:53</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Allá nos vemos</span>
-                                <span class="mensaje__numero">2</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat__interfaz interfaz">
-                        <div class="interfaz__imagen imagen">
-                            <img src="fotos/sin foto.jpg" alt="Foto hombre" class="imagen__foto">
-                        </div>
-                        <div class="interfaz__cuerpo cuerpo">
-                            <div class="cuerpo__informacion informacion"> 
-                                <span class="informacion__nombre">Torres</span>
-                                <span class="informacion__hora">7:35</span>
-                            </div>
-                            <div class="cuerpo__mensaje mensaje">
-                                <span class="mensaje__texto">Ya estás despierto???</span>
-                                <span class="mensaje__numero">1</span>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-                <div class="estados">
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/paisaje-og.webp" alt="paisaje" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Mi estado</span>
-                                <span class="info__hora">Hace 55 minutos, 17:42</span>
-                            </div>
-                        </div>
-                        <div class="apartado__icon">
-                            <i class='bx bx-dots-horizontal-rounded'></i>
-                        </div>
-                    </div>
-                    <div class="estados__descripcion descripcion">
-                        <span class="descripcion__texto">Recientes</span>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est1.png" alt="matacho" class="img__estado img__estado--visto">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Breyner</span>
-                                <span class="info__hora">Justo ahora</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est3.jpeg" alt="perro" class="img__estado img__estado--visto">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Yari</span>
-                                <span class="info__hora">Hace 10 minutos</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est5.webp" alt="paisaje" class="img__estado img__estado--visto">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Mommy</span>
-                                <span class="info__hora">13:59</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est6.jpeg" alt="perrito" class="img__estado img__estado--visto">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Laura</span>
-                                <span class="info__hora">13:33</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est4.jpeg" alt="foto" class="img__estado img__estado--visto">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Profe John</span>
-                                <span class="info__hora">12:58</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est2.jpeg" alt="meme" class="img__estado img__estado--visto">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Papeleria Zafiro</span>
-                                <span class="info__hora">12:43</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__descripcion descripcion">
-                        <span class="descripcion__texto">Vistos</span>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est7.jpeg" alt="meme" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Brayan</span>
-                                <span class="info__hora">11:53</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est8.jpg" alt="mujer" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Luisa</span>
-                                <span class="info__hora">10:03</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est9.jpg" alt="bebe" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Maria Paula</span>
-                                <span class="info__hora">9:47</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est10.jpg" alt="pero" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Andres</span>
-                                <span class="info__hora">9:15</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est11.webp" alt="moto" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">David Guevara</span>
-                                <span class="info__hora">8:32</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estados__apartado apartado">
-                        <div class="apartado__img img">
-                            <img src="estados/est12.avif" alt="libro" class="img__estado">
-                        </div>
-                        <div class="apartado__espacio espacio">
-                            <div class="espacio__info info"> 
-                                <span class="info__miestado">Lady</span>
-                                <span class="info__hora">8:00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="llamadas">
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__link link">
-                            <i class='link__icon bx bx-link-alt bx-rotate-180' ></i>
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Crear enlace de llamada</span>
-                                <span class="detalles__hora hora">
-                                    Comparte el enlace para tu llamada
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="llamadas__descripcion descripcion">
-                        <span class="descripcion__texto">Recientes</span>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/mujer.jpg" alt="mujer" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Luisa</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>Hace 10 minutos
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/mujer.jpg" alt="mujer" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Luisa</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>14:22
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/mono.png" alt="mono" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Breyner</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>Ayer, 13:47
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/sin foto.jpg" alt="sin foto" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Torres</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>Ayer, 10:15
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/joven.jpg" alt="Jover" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Brayan Tec</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>Ayer, 8:25
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/perfil yari.png" alt="gato" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Yari</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>19/08/2024, 11:31
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/joven2.webp" alt="joven" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Americo</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>19/08/2024, 00:02
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/foto1.png" alt="joven" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Fransisco Flores</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>18/08/2024, 09:34
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/sin foto.jpg" alt="sin foto" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Kevin Paez</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon bx bx-trending-down bx-rotate-90' ></i>11/08/2024, 12:02
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                    <div class="llamadas__seccion seccion">
-                        <div class="seccion__image image">
-                            <img src="fotos/sin foto.jpg" alt="sin foto" class="image__llamada">
-                        </div>
-                        <div class="seccion__parte parte">
-                            <div class="parte__detalles detalles"> 
-                                <span class="detalles__nombre">Manolo</span>
-                                <span class="detalles__hora hora">
-                                    <i class='hora__icon hora__icon--rojo bx bx-trending-down bx-rotate-270'></i>10/08/2024, 14:56
-                                </span>
-                            </div>
-                        </div>
-                        <div class="seccion__icon">
-                            <i class='bx bxs-phone'></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            </main>
+
         </div>
+
     </main>
+
 </body>
 </html>

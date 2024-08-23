@@ -17,15 +17,17 @@ body{
     background-color: var(--blanco);
     margin: 40px auto;
     border: 3px solid var(--blanco);
-    position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-radius: 30px;
 }
 .header{
     width: 100%;
-    height: 119.5px;
+    height: 80px;
     background-color: var(--verde_oscuro);
     color: var(--blanco);
+}
+.contenido{
+    position: relative;
 }
 .principal{
     display: flex;
@@ -36,12 +38,24 @@ body{
     font-weight: 400;
     font-size: 25px;
 }
-.navegacion{
+.principal__iconos{
+    width: 100px;
     display: flex;
     justify-content: space-between;
+    padding-top: 7px;
+}
+.iconos__camara, .iconos__lupa, .iconos__3puntos{
+    cursor: pointer;
+    width: 25px;
+    height: 50px;
+}
+.navegacion{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    background-color: var(--verde_oscuro);
 }
 .navegacion__circulo{
     width: 20px;
@@ -50,48 +64,109 @@ body{
     border-radius: 100%;
     background-color: var(--blanco);
     color: var(--negro);
-    margin-left: 5px;
+    margin-left: 12px;
     justify-content: center;
     align-items: center;
     font-size: 10px;
 }
+.navegacion__circulo--sin_numero{
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+}
 .navegacion__item{
-    padding: 10px 20px 10px 20px;
+    /* padding: 10px 20px 10px 20px; */
+    justify-content: center;
     border-bottom: 3px solid var(--verde_oscuro);
-    color: var(--blanco_transparente);
+    /* color: var(--blanco_transparente); */
+    color: var(--blanco);
+    background-color: var(--verde_oscuro);
     cursor: pointer;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    height: 42.96px;
+    width: 33.333%;
 }
-.navegacion__item--camara{
-    padding-left: 15px;
-    padding-right: 10px;
+/* .navegacion__barra{
+    width: 100%;
+    height: 5px;
+    background-color: var(--verde_oscuro);
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+    ;
 }
-.navegacion__item--borde_bajo{
-    border-bottom: 4px solid var(--blanco);
-    color: var(--blanco);
+.barra{
+    width: 33.333%;
+    height: 4px;
+    background-color: var(--blanco);
+    margin-bottom: 0.5px;
+} */
+
+.contenido__inputs{
+    display: none;
 }
 
-
-.contenedor_interfaz{
+.contenido_interfaz{
+    display: flex;
+    position: relative;
     width: 1332px;
     display: flex;
     flex-wrap: nowrap;
+    transition: 0.5s;
 }
 .chat, .estados, .llamadas{
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
     padding-bottom: 110px;
     overflow-y: scroll;
     height: 705px;
     scrollbar-width: none;
-    background-color: var(--blanco);
-    border: 1px solid black;                /*Quitar al terminar*/
+    background-color: var(--blanco);    
+    /* border: 1px solid black;                Quitar al terminar */
+}
+.boton_contactos, .boton_camara, .boton__llamada, .boton_lapiz{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: var(--verde_claro);
+    color: var(--blanco);
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    filter: drop-shadow(0px 3px 7px var(--gris));
+    cursor: pointer;
+}
+.boton_contactos{
+    top: 590px;
+    left: 340px;
+}
+.boton_camara{
+    top: 590px;
+    left: 784px;
+}
+.boton_lapiz{
+    top: 510px;
+    left: 784px;
+    width: 65px;
+    height: 65px;
+    background-color: var(--gris);
+}
+.boton__llamada{
+    top: 590px;
+    left: 1228px;
 }
 .interfaz, .apartado, .seccion{
     padding-top: 10px;
     display: flex;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.interfaz:hover, .apartado:hover, .seccion:hover{
+    background-color: var(--gris_claro);
 }
 .imagen, .img, .image{
     height: 70px;
@@ -122,6 +197,9 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+.detalles__nombre--rojo{
+    color: var(--rojo);
+}
 .informacion__hora{
     font-size: 14px;
     color: var(--verde_claro);
@@ -142,9 +220,8 @@ body{
     align-items: center;
     font-size: 14px;
 }
-.mensaje__numero--blanco{
-    background-color: var(--blanco);
-    color: var(--blanco);
+.mensaje__numero--inactivo{
+    display: none;
 }
 .informacion__hora--negro{
     color: var(--negro);
@@ -153,20 +230,6 @@ body{
     color: var(--verde_claro);
 }
 
-.boton_contactos{
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    background-color: var(--verde_claro);
-    color: var(--blanco);
-    display: flex;
-    border-radius: 100%;
-    align-items: center;
-    justify-content: center;
-    top: 725px;
-    left: 340px;
-    font-size: 30px;
-}
 
 .img__estado{
     padding: 2px;
@@ -192,6 +255,8 @@ body{
     font-size: 30px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    color: var(--verde_oscuro);
 }
 .info__hora{
     color: var(--gris);
@@ -243,4 +308,15 @@ body{
     display: flex;
     align-items: center;
     color: var(--verde_fondo);
+}
+
+
+input[id="chats"]:checked~ .contenido_interfaz {
+    left: calc(444px* 0);
+}
+input[id="estados"]:checked~ .contenido_interfaz {
+    left: calc(444px* -1);
+}
+input[id="llamadas"]:checked~ .contenido_interfaz {
+    left: calc(444px* -2);
 }
